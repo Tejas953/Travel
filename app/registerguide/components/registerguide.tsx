@@ -1,8 +1,7 @@
 'use client';
 import React, { useEffect, useState } from "react";
 import { getRegisterGuideRes } from "@/helper"; // Adjust the import path based on your project structure
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+
 
 // Define type for the form data structure
 interface FormData {
