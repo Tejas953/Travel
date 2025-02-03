@@ -63,7 +63,8 @@ const ContactUs: React.FC = () => {
           setError('No form data available.');
         }
         setLoading(false);
-      } catch (_error) {
+      } catch (error) {
+        console.error('Error fetching form data:', error);
         setError('Failed to load form data.');
         setLoading(false);
       }
