@@ -1,0 +1,116 @@
+export default function FAQ() {
+    return (
+      <div className="bg-gray-50 min-h-screen">
+        <header className="bg-gradient-to-r from-teal-500 to-teal-300 text-white p-8">
+          <h1 className="text-5xl font-extrabold text-center">Frequently Asked Questions</h1>
+          <p className="text-center text-lg mt-4">Everything you need to know about our travel companion services</p>
+        </header>
+  
+        <main className="p-6 max-w-4xl mx-auto mt-12">
+          {/* Ask a Question Section */}
+          <section className="bg-white p-6 rounded-lg shadow-xl mb-12">
+            <h2 className="text-3xl font-semibold text-teal-600 mb-6">Have a Question? Ask Us!</h2>
+            <form className="space-y-6">
+              <div>
+                <label className="block text-gray-700 text-lg font-medium" htmlFor="question">
+                  Your Question:
+                </label>
+                <textarea
+                  id="question"
+                  className="w-full p-4 border border-gray-300 rounded-lg"
+                  rows={4}
+                  placeholder="Ask your question here..."
+                />
+              </div>
+              <div>
+                <label className="block text-gray-700 text-lg font-medium" htmlFor="name">
+                  Your Name (Optional):
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  className="w-full p-4 border border-gray-300 rounded-lg"
+                  placeholder="Your name (optional)"
+                />
+              </div>
+              <div>
+                <button type="submit" className="w-full py-3 bg-teal-600 text-white rounded-lg hover:bg-teal-500 transition-all">
+                  Submit Question
+                </button>
+              </div>
+            </form>
+          </section>
+  
+          {/* Frequently Asked Questions Section */}
+          <section className="space-y-8">
+            <h2 className="text-3xl font-semibold text-teal-600">Frequently Asked Questions</h2>
+  
+            {/* FAQ Item 1 */}
+            <div className="bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105 p-6 hover:shadow-2xl">
+              <h3 className="text-2xl font-semibold text-teal-600 hover:text-teal-500 cursor-pointer">
+                What is the Travel Companion Website?
+              </h3>
+              <p className="mt-4 text-gray-700">
+                The Travel Companion Website is designed to assist travelers with useful tips, travel planning tools, and the ability to connect with others traveling to the same destinations.
+              </p>
+            </div>
+  
+            {/* FAQ Item 2 */}
+            <div className="bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105 p-6 hover:shadow-2xl">
+              <h3 className="text-2xl font-semibold text-teal-600 hover:text-teal-500 cursor-pointer">
+                How do I use the Travel Tips section?
+              </h3>
+              <p className="mt-4 text-gray-700">
+                Simply visit the Travel Tips section and explore articles based on various travel-related topics such as packing tips, safety advice, and budget-friendly travel ideas.
+              </p>
+            </div>
+  
+            {/* FAQ Item 3 */}
+            <div className="bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105 p-6 hover:shadow-2xl">
+              <h3 className="text-2xl font-semibold text-teal-600 hover:text-teal-500 cursor-pointer">
+                Can I contribute to the Travel Tips section?
+              </h3>
+              <p className="mt-4 text-gray-700">
+                Yes! We encourage travelers to share their experiences and tips. If you want to contribute, please visit our "Contribute" page and submit your content.
+              </p>
+            </div>
+  
+            {/* FAQ Item 4 */}
+            <div className="bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105 p-6 hover:shadow-2xl">
+              <h3 className="text-2xl font-semibold text-teal-600 hover:text-teal-500 cursor-pointer">
+                Is there a community section where I can ask questions?
+              </h3>
+              <p className="mt-4 text-gray-700">
+                Yes, our website features a community section where you can ask questions, share experiences, and connect with fellow travelers.
+              </p>
+            </div>
+  
+            {/* FAQ Item 5 */}
+            <div className="bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105 p-6 hover:shadow-2xl">
+              <h3 className="text-2xl font-semibold text-teal-600 hover:text-teal-500 cursor-pointer">
+                How can I contact the support team?
+              </h3>
+              <p className="mt-4 text-gray-700">
+                You can contact our support team through the "Contact Us" page, where you'll find our email and phone details.
+              </p>
+            </div>
+  
+            {/* FAQ Item 6 */}
+            <div className="bg-white rounded-lg shadow-xl transition-transform transform hover:scale-105 p-6 hover:shadow-2xl">
+              <h3 className="text-2xl font-semibold text-teal-600 hover:text-teal-500 cursor-pointer">
+                Are there any membership or subscription fees?
+              </h3>
+              <p className="mt-4 text-gray-700">
+                No, the Travel Companion Website is completely free to use. There are no hidden fees or subscription charges for accessing the content or features.
+              </p>
+            </div>
+          </section>
+        </main>
+  
+        <footer className="bg-teal-500 text-white text-center py-4 mt-12">
+          <p>© 2025 Travel Companion. All rights reserved.</p>
+        </footer>
+      </div>
+    );
+  }
+  
