@@ -1,6 +1,6 @@
 import { Component } from "../typescript/component";
 import { Image } from "../typescript/action";
-import { Entry, HeaderProps ,FooterProps } from "./layout";
+// import { Entry, HeaderProps ,FooterProps } from "./layout";
 
 type AdditionalParam = {
   powers: {};
@@ -61,10 +61,10 @@ export type Props = {
   page: Page;
   entryUrl: string;
   Component: Function;
-  entries: Entry;
+  // entries: Entry;
   pageProps: PageProps;
-  header: HeaderProps;
-  footer: FooterProps;
+  // header: HeaderProps;
+  // footer: FooterProps;
 }
 
 export type Page ={
